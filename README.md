@@ -81,6 +81,12 @@ server {
 <img width="1074" alt="Screen Shot 2022-09-04 at 1 15 46 AM" src="https://user-images.githubusercontent.com/112595648/188317638-4cf795ce-6e4b-4a07-b1f6-0c33899ef1d8.png">
 
 25. Your LEMP stack is now fully configured, now we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.
+  can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor with the command
+      : sudo nano /var/www/projectLEMP/info.php
+26. save the php script in the created file
+<?php
+phpinfo();
 
-
+27 . enter the url http://`server_domain_or_IP`/info.php and below seen
+<img width="1019" alt="Screen Shot 2022-09-04 at 1 29 46 AM" src="https://user-images.githubusercontent.com/112595648/188318459-2a0535d9-a317-48fb-80a4-58e9b1ed6dd8.png">
 
