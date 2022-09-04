@@ -89,7 +89,7 @@ server {
 phpinfo();
 
 
-27 . enter the url adding /info.php to it and below seen
+27.enter the url adding /info.php to it and below seen
 
 
  <img width="1019" alt="Screen Shot 2022-09-04 at 1 29 46 AM" src="https://user-images.githubusercontent.com/112595648/188318459-2a0535d9-a317-48fb-80a4-58e9b1ed6dd8.png">
@@ -97,7 +97,8 @@ phpinfo();
 28. the .php contains alot of details and should be removed for some security reasons using command
  : sudo rm /var/www/your_domain/info.php
 
-29.Now lEMP IS setup and done and a task here is to create a test database (DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
+
+29. Now lEMP IS setup and done and a task here is to create a test database (DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
 
 
 
