@@ -86,7 +86,6 @@ server {
 26. save the php script in the created file
 <?php
 phpinfo();
-
 27 . enter the url adding /info.php to it and below seen
 
 
