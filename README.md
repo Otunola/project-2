@@ -67,4 +67,20 @@ server {
 19. Activate your configuration by linking to the config file from Nginx’s sites-enabled directory with the command 
     :sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
 
+20. then we test out NginX config so far with the command : sudo nginx -t
+<img width="563" alt="Screen Shot 2022-09-04 at 1 10 33 AM" src="https://user-images.githubusercontent.com/112595648/188316794-117cfc0b-9dd5-4b90-bcc0-7c3261e47c3e.png">
+
+21. Then disable default Nginx host that is currently configured to listen on port 80 with the command
+    : sudo unlink /etc/nginx/sites-enabled/default
+22 Reload Nginx for changes to take effect with the command : sudo systemctl reload nginx
+23. Create an index.html file in that location so that we can test that your new server block works as expected with the comand
+   : sudo echo 'Hello LEMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectLEMP/index.html
+   
+24.Now go to your browser and try to open your website URL using IP address
+
+<img width="1074" alt="Screen Shot 2022-09-04 at 1 15 46 AM" src="https://user-images.githubusercontent.com/112595648/188317638-4cf795ce-6e4b-4a07-b1f6-0c33899ef1d8.png">
+
+25. Your LEMP stack is now fully configured, now we’ll create a PHP script to test that Nginx is in fact able to handle .php files within your newly configured website.
+
+
 
