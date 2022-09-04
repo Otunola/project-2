@@ -30,4 +30,9 @@ as shown below
 13. Since NginX is properly installed, Now you can install PHP to process code and generate dynamic content for the web server.
    the packages needed will be installed with this command : sudo apt install php-fpm php-mysql
 14. the version of the php installation can be checked with the command : php -v
-You now have your PHP components installed. Next, you will configure Nginx to use them
+You now have your PHP components installed. Next, you will configure Nginx to use them.
+
+ To encapsulate configuration details and host more than one domain on a single server. in this project we create another directory to add to the default one instead of modifying the default.
+ 
+ 15. the new directory is named projectLEMP and created witht the command : sudo mkdir /var/www/projectLEMP
+ 16. Assign ownership of the directory with the current user : sudo chown -R $USER:$USER /var/www/projectLEMP
