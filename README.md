@@ -160,5 +160,5 @@ try {
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
-}
+} 
 42. enter your server url /todo_list.php
