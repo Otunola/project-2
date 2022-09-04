@@ -90,7 +90,7 @@ phpinfo();
 27 . enter the url adding /info.php to it and below seen
 
 
-<img width="1019" alt="Screen Shot 2022-09-04 at 1 29 46 AM" src="https://user-images.githubusercontent.com/112595648/188318459-2a0535d9-a317-48fb-80a4-58e9b1ed6dd8.png">
+ <img width="1019" alt="Screen Shot 2022-09-04 at 1 29 46 AM" src="https://user-images.githubusercontent.com/112595648/188318459-2a0535d9-a317-48fb-80a4-58e9b1ed6dd8.png">
 
 
 
