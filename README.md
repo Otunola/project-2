@@ -84,8 +84,11 @@ server {
   can do this by creating a test PHP file in your document root. Open a new file called info.php within your document root in your text editor with the command
       : sudo nano /var/www/projectLEMP/info.php
 26. save the php script in the created file
+
 <?php
 phpinfo();
+
+
 27 . enter the url adding /info.php to it and below seen
 
 
