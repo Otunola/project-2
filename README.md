@@ -112,5 +112,11 @@ then enter the password when prompted.
 
 34. then exit from the mysql root... then login with the created example user and password with the command below
    : mysql -u example_user -p
+
+<img width="560" alt="Screen Shot 2022-09-04 at 1 53 16 AM" src="https://user-images.githubusercontent.com/112595648/188319622-78f18616-c202-4ca2-95e5-b6701b44a67e.png">
+
 35. mysql> SHOW DATABASES; gives the output below
+
+<img width="558" alt="Screen Shot 2022-09-04 at 1 55 00 AM" src="https://user-images.githubusercontent.com/112595648/188319646-c854e202-014a-4223-ae4b-c1f3e85a88e1.png">
+
 
