@@ -129,5 +129,37 @@ PRIMARY KEY(item_id)
 
 ![image](https://user-images.githubusercontent.com/112595648/188319791-15a18c6d-98b8-4e02-bfea-65ff11429e2c.png)
 
+37. Insert a few rows of content in the test table in the daatabase with the command: 
+INSERT INTO example_database.todo_list (content) VALUES
+("My first important item"),
+("My second important item"),
+("My third important item"),
+("and this one more thing");
+![image](https://user-images.githubusercontent.com/112595648/188319895-191b5f29-0508-4952-b412-f3c0457fa745.png)
 
+38. To confirm that the data was successfully saved to your table, run: mysql>  SELECT * FROM example_database.todo_list;
+to get the output 
+<img width="567" alt="Screen Shot 2022-09-04 at 2 12 18 AM" src="https://user-images.githubusercontent.com/112595648/188319966-0fb7a28b-33c0-4db5-a98e-8fce9b1a5299.png">
 
+39. we then exit mysql
+40.create a PHP script that will connect to MySQL and query for your content with the command : nano /var/www/projectLEMP/todo_list.php
+41. copy and save the script below to the todo_list.php :
+ <?php
+$user = "example_user";
+$password = "password";
+$database = "example_database";
+$table = "todo_list";
+
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+42. enter your server url /todo_list.php
