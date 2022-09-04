@@ -26,3 +26,8 @@ as shown below
 11.the database can now be accessed with the command : sudo mysql -p
  and the password will be required to access it because of the -p
  12. Your MySQL server is now installed and secured. Next, we will install PHP, the final component in the LEMP stack.
+
+13. Since NginX is properly installed, Now you can install PHP to process code and generate dynamic content for the web server.
+   the packages needed will be installed with this command : sudo apt install php-fpm php-mysql
+14. the version of the php installation can be checked with the command : php -v
+You now have your PHP components installed. Next, you will configure Nginx to use them
