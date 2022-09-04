@@ -36,3 +36,35 @@ You now have your PHP components installed. Next, you will configure Nginx to us
  
  15. the new directory is named projectLEMP and created witht the command : sudo mkdir /var/www/projectLEMP
  16. Assign ownership of the directory with the current user : sudo chown -R $USER:$USER /var/www/projectLEMP
+
+We then use nano to create a new site for Nginx’s sites-available with the command : sudo nano /etc/nginx/sites-available/projectLEMP
+
+17. We paste and save the following component
+18. #/etc/nginx/sites-available/projectLEMP
+
+server {
+    listen 80;
+    server_name projectLEMP www.projectLEMP;
+    root /var/www/projectLEMP;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}
+
+19. Activate your configuration by linking to the config file from Nginx’s sites-enabled directory with the command 
+    :sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/
+
+
