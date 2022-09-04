@@ -99,7 +99,18 @@ phpinfo();
 
 29. Now lEMP IS setup and done and a task here is to create a test database (DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
 
+30. First, connect to the MySQL console using the root account using : sudo mysql -p
+then enter the password when prompted.
 
+<img width="568" alt="Screen Shot 2022-09-04 at 1 41 44 AM" src="https://user-images.githubusercontent.com/112595648/188319163-1ae6a111-5770-48fb-b36c-1ca8cfc793ce.png">
 
+31. Create a new database called example-database with the command from mysql console: mysql> CREATE DATABASE `example_database`;
 
+32. Create a new user and its password with the command: mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+
+33. grants the users permissions over the database with the command : mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+
+34. then exit from the mysql root... then login with the created example user and password with the command below
+   : mysql -u example_user -p
+35. mysql> SHOW DATABASES; gives the output below
 
