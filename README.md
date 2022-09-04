@@ -97,7 +97,6 @@ phpinfo();
 28. the .php contains alot of details and should be removed for some security reasons using command
  : sudo rm /var/www/your_domain/info.php
 
-
 29. Now lEMP IS setup and done and a task here is to create a test database (DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
 
 
