@@ -119,4 +119,13 @@ then enter the password when prompted.
 
 <img width="558" alt="Screen Shot 2022-09-04 at 1 55 00 AM" src="https://user-images.githubusercontent.com/112595648/188319646-c854e202-014a-4223-ae4b-c1f3e85a88e1.png">
 
+36. we’ll create a test table named todo_list. From the MySQL console, run the following statement:
+CREATE TABLE example_database.todo_list (
+item_id INT AUTO_INCREMENT,
+content VARCHAR(255),
+PRIMARY KEY(item_id)
+);
+![image](https://user-images.githubusercontent.com/112595648/188319791-15a18c6d-98b8-4e02-bfea-65ff11429e2c.png)
+
+
 
